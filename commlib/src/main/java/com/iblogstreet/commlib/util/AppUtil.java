@@ -141,6 +141,6 @@ public class AppUtil {
     public static boolean isMainProcess(String packageName) {
         // 获取当前进程名
         String processName = AppUtil.getProcessName(android.os.Process.myPid());
-        return processName != null && processName == packageName;
+        return processName != null && processName.equals(packageName);
     }
 }
